@@ -4,8 +4,8 @@ var cors = require('cors')
 var jwt = require('express-jwt')
 
 var jwtCheck = jwt({
-  secret: 'YOUR_CLIENT_SECRECT',
-  audience: 'YOUR_CLIENT_ID'
+  secret: 'NZbO0ydatA5Msi8LY82CwgUBrq5RnqlJUaMGJA-2EUVtdAM2-ZvG2-HU2sF_6hzC',
+  audience: '02PWZfEUKiTNiL5BvCfso6eAqSmK2Ey2'
 })
 
 app.use(cors())
@@ -21,6 +21,15 @@ app.get('/ping', function(req, res) {
 // secured call
 app.get('/secured/ping', function(req, res) {
   res.status(200).send("All good. You only get this message if you're authenticated");
+})
+
+app.get('/secured/projects', function(req, res) {
+  var data = [
+   {"name":"Project 1", "assignedTo":"Matt B", "priority": "High"},
+   {"name":"Project 2", "assignedTo":"Matt B", "priority": "Medium"},
+   {"name":"Project 3", "assignedTo":"Matt B", "priority": "Low"}
+  ]
+  res.status(200).json(data);
 })
 
 app.listen(3000, function () {

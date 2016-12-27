@@ -40,11 +40,7 @@ export default {
   },
   methods: {
     loadProjects: function () {
-      // mocky.io does not allow sending an authorization header, I created an instance and removed
-      // the header for this call
-      let mock = axios.create()
-      delete mock.defaults.headers.common.Authorization
-      mock.get('http://www.mocky.io/v2/585e03ce100000b82c501e8e').then((response) => {
+      axios.get('/secured/projects').then((response) => {
         this.projects = response.data
       }, (err) => {
         console.log(err)
