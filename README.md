@@ -1,7 +1,7 @@
 # vuesetup
 
 This repo accompanies the following blog post:  
-[Vue.js - Project Setup](https://medium.com/@bradfmd/vue-js-project-setup-2b39fcc8867d#.t5x1peg37)
+[Vue.js - Setting up auth0](https://medium.com/@bradfmd/vue-js-setting-up-auth0-6eb26cbbc48a)
 
 ## Build Setup
 
