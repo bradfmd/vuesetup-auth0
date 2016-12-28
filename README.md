@@ -1,7 +1,7 @@
 # vuesetup
 
 This repo accompanies the following blog post:  
-[Vue.js - Setting up auth0](https://medium.com/@bradfmd/vue-js-setting-up-auth0-6eb26cbbc48a)
+[Vue.js - Setting up Auth0](https://medium.com/@bradfmd/vue-js-setting-up-auth0-6eb26cbbc48a)
 
 ## Build Setup
 
