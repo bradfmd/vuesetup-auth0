@@ -16,7 +16,7 @@ axios.interceptors.response.use((response) => {
   if (error.response.status === 401) {
     console.log('unauthorized, logging out ...')
     auth.logout()
-    router.go('/login')
+    router.replace('/login')
   }
   return Promise.reject(error)
 })
