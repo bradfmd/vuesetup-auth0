@@ -2,8 +2,8 @@ import axios from 'axios'
 
 /* eslint no-undef: "off" */
 const auth0 = new Auth0({
-  domain: 'mdb.auth0.com',
-  clientID: '02PWZfEUKiTNiL5BvCfso6eAqSmK2Ey2',
+  domain: 'YOUR_DOMAIN',
+  clientID: 'YOUR_CLIENT_ID',
   responseType: 'token',
   callbackURL: window.location.origin + '/'
 })
